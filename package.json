@@ -1,0 +1,16 @@
+{
+  "name": "notifications",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "app-install": "npm --prefix ./notification install && npm --prefix ./notification-app install",
+    "app-start": "concurrently --kill-others \"npm --prefix ./notification start\" \"npm --prefix ./notification-app start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
